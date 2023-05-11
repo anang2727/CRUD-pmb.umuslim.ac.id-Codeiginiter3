@@ -1,0 +1,56 @@
+/* Nama Al muslmim  */
+#header .container .logo a {
+    color: #1BB273;
+    font-family: poppins
+}
+
+/* Ikon  */
+#counts .container .fa-solid {
+    background-color: #1BB273;
+}
+
+.services .icon-box {
+    border: 1px solid #d5e1ed;
+  }
+  
+  .services .icon-box .icon {
+    background: #1BB273;
+  }
+  
+  .services .icon-box .icon i {
+    color: #fff;
+  }
+  
+  .services .icon-box .icon::before {
+    background: #7cf5c3;
+  }
+  .services .icon-box h4 a {
+    color: #14784e;
+  }
+  .services .icon-box:hover {
+    background: #14784e;
+    border-color: #1BB273;
+  }
+  .services .icon-box:hover .icon {
+    background: #fff;
+  }
+  
+  .services .icon-box:hover .icon i {
+    color: #1BB273;
+  }
+  .services .icon-box:hover .icon::before {
+    background: #1BB273;
+  }
+  
+  /*  Telepon dan E-mail*/
+  #topbar .contact-info i {
+    color: #1BB273;
+  }
+
+/* Button send message  */
+.contact .php-email-form button[type=submit] {
+  background-color: #1BB273;
+}
+.contact .php-email-form button[type=submit]:hover {
+  background-color: #14784e;
+}
