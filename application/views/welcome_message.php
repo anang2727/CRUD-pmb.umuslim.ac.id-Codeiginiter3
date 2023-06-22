@@ -9,8 +9,8 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
   <!-- Favicons -->
-  <link rel="shortcut icon" href="<?=base_url()?> assets/img/Logo-Almuslim-Original-PNG.ico" type="image/x-icon">
-  <link href="<?=base_url()?> assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link rel="shortcut icon" href="assets/img/Logo-Almuslim-Original-PNG.ico" type="image/x-icon">
+  <link href=" assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -87,7 +87,7 @@
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
-      <a href="<?=base_url('buat-akun')?>" style="background-color: #1BB273;" class="appointment-btn scrollto"><span class="d-none d-md-inline">Masuk</span></a>
+      <a href="<?=base_url('login/auth')?>" style="background-color: #1BB273;" class="appointment-btn scrollto"><span class="d-none d-md-inline">Login</span></a>
 
     </div>
   </header><!-- End Header -->
@@ -97,7 +97,7 @@
     <div class="container">
       <h1 style="color: #fff;" >UNIVERSITAS AL-MUSLIM</h1>
       <h2 style="color:#fff; " >Unggul Profesional dan Islami</h2>
-      <a href="<?=base_url('registrasi')?>" class="btn-get-started scrollto" style="background-color: #1bb273;">Get Started</a>
+      <a href="<?=base_url('registrasi/tambah')?>" class="btn-get-started scrollto" style="background-color: #1bb273;">Get Started</a>
     </div>
   </section><!-- End Hero -->
 
@@ -649,7 +649,7 @@
           <!-- You can delete the links only if you purchased the pro version. -->
           <!-- Licensing information: https://bootstrapmade.com/license/ -->
           <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/medilab-free-medical-bootstrap-theme/ -->
-          Designed by <a href="https://bootstrapmade.com/">My Hand Made</a>
+          Designed by <a href="#">My Hand Made</a>
         </div>
       </div>
       <div class="social-links text-center text-md-right pt-3 pt-md-0">

@@ -1,0 +1,135 @@
+<h3>DATA REGISTRASI</h3>
+<?php echo anchor ('registrasi/tambah','Tambah Data');?>
+<table border="1">
+    <tr>
+        <td>No</td>
+        <td>Nama Lengkap</td>
+        <td>NIK</td>
+        <td>Suku</td>
+        <td>Tempat Lahir</td>
+        <td>Tanggal Lahir</td>
+        <td>Jenis Kelamin</td>
+        <td>Agama</td>
+        <td>Tinggi</td>
+        <td>Jalan</td>
+        <td>Dusun</td>
+        <td>RT</td>
+        <td>RW</td>
+        <td>Kecamatan</td>
+        <td>Kelurahan</td>
+        <td>Kode Pos</td>
+        <td>Telepon</td>
+        <td>HP</td>
+        <td>E-mail</td>
+        <td>Status</td>
+        <td>Pendidikan Terakhir</td>
+        <td>Nisn</td>
+        <td>Nama Sekolah</td>
+        <td>Jurusan</td>
+        <td>No Ijazah</td>
+        <td>Tempat Ijazah</td>
+        <td>Tgl Ijazah</td>
+        <td>Nama Ayah</td>
+        <td>Nik Ayah</td>
+        <td>Hubungan Dengan Ayah</td>
+        <td>Tpt Lahir</td>
+        <td>Tgl Lahir</td>
+        <td>Status Ayah</td>
+        <td>Pekerjaan Ayah</td>
+        <td>No Hp Ayah</td>
+        <td>Telepon Ayah</td>
+        <td>Alamat Rumah Ayah</td>
+        <td>Alamat Kantor Ayah</td>
+        <td>Nama Ibu</td>
+        <td>Nik Ibu</td>
+        <td>Hubungan Dengan Ibu</td>
+        <td>Tpt Lahir</td>
+        <td>Tgl Lahir</td>
+        <td>Status Ibu</td>
+        <td>Pekerjaan Ibu</td>
+        <td>No Hp Ibu</td>
+        <td>Telepon Ibu</td>
+        <td>Alamat Rumah Ibu</td>
+        <td>Alamat Kantor Ibu</td>
+        <td>Prodi 1</td>
+        <td>Prodi 2</td>
+        <td>Kelas</td>
+        <td>Ijazah</td>
+        <td>Foto</td>
+        <td>Trankrip Nilai</td>
+        <td>Kartu Keluarga</td>
+        <td>Kartu KIP</td>
+        <td>Prodi 1</td>
+        <td></td>
+
+        <td colspan="2">Operasi</td>
+    </tr>
+        <?php
+        $no=1;
+        foreach ($record->result() as $r){
+            echo "<tr>
+            <td> $no</td>
+            <td>$r->namaLengkap</td>
+            <td>$r->nik</td>
+            <td>$r->suku</td>
+            <td>$r->tpt_lahir</td>
+            <td>$r->tgl_lahir</td>
+            <td>$r->jenis_kelamin</td>
+            <td>$r->agama</td>
+            <td>$r->tinggi</td>
+            <td>$r->jalan</td>
+            <td>$r->dusun</td>
+            <td>$r->rt</td>
+            <td>$r->rw</td>
+            <td>$r->kecamatan</td>
+            <td>$r->kelurahan</td>
+            <td>$r->kode_pos</td>
+            <td>$r->telepon</td>
+            <td>$r->hp</td>
+            <td>$r->email</td>
+            <td>$r->status</td>
+            <td>$r->pendidikan_terakhir</td>
+            <td>$r->nisn</td>
+            <td>$r->nama_sekolah</td>
+            <td>$r->jurusan</td>
+            <td>$r->no_ijazah</td>
+            <td>$r->tempat_ijazah</td>
+            <td>$r->tgl_ijazah</td>
+            <td>$r->nama_ayah</td>
+            <td>$r->nik_ayah</td>
+            <td>$r->hubungan_ayah</td>
+            <td>$r->tpt_lahir_ayah</td>
+            <td>$r->tgl_lahir_ayah</td>
+            <td>$r->status_ayah</td>
+            <td>$r->pekerjaan_ayah</td>
+            <td>$r->no_hp_ayah</td>
+            <td>$r->telepon_ayah</td>
+            <td>$r->alamat_rumah_ayah</td>
+            <td>$r->alamat_kantor_ayah</td>
+            <td>$r->nama_ibu</td>
+            <td>$r->nik_ibu</td>
+            <td>$r->hubungan_ibu</td>
+            <td>$r->tempat_lahir_ibu</td>
+            <td>$r->tgl_lahir_ibu</td>
+            <td>$r->status_ibu</td>
+            <td>$r->pekerjaan_ibu</td>
+            <td>$r->no_hp_ibu</td>
+            <td>$r->telepon_ibu</td>
+            <td>$r->alamat_rumah_ibu</td>
+            <td>$r->alamat_kantor_ibu</td>
+            <td>$r->prodi1</td>
+            <td>$r->prodi2</td>
+            <td>$r->kelas</td>
+            <td>$r->ijazah</td>
+            <td>$r->foto</td>
+            <td>$r->transkrip_nilai</td>
+            <td>$r->kk</td>
+            <td>$r->k_kip</td>
+            <td>$r->nama_prodi</td>
+            <td>".anchor('registrasi/edit/'.$r->id_registrasi,'Edit')."</td>
+            <td>".anchor('registrasi/delete/'.$r->id_registrasi,'Delete')."</td>
+            <tr>";
+            $no++;
+        }?>
+</table>
+<a href="<?php echo base_url()?>">Beranda</a>
